@@ -1,0 +1,23 @@
+.ToolBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 16px;
+
+  /* background-color: white; */
+}
+
+.ResetButton {
+  --radius: 36;
+  --size: calc(calc(var(--radius) * 2) * 1px);
+  /* border: thin solid blue; */
+  border: none;
+  border-radius: calc(var(--radius) * 1px);
+  height: var(--size);
+  width: var(--size);
+
+  background-color: #ddd;
+
+  font-size: 14px;
+  font-weight: 500;
+}

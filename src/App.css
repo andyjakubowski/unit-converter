@@ -1,0 +1,18 @@
+.App {
+}
+
+.App::before {
+  content: "";
+
+  display: block;
+  height: 12px;
+
+  background: linear-gradient(
+    to right,
+    #010781 20%,
+    #3f48d1 20% 40%,
+    #4f5aff 40% 60%,
+    #02089d 60% 80%,
+    #080dff 80%
+  );
+}

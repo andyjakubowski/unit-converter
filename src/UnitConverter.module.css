@@ -1,0 +1,12 @@
+.UnitBoxList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  margin-block-end: 2px;
+}
+
+/* Positioning */
+/* Display */
+/* Colors */
+/* Type */
+/* Other */

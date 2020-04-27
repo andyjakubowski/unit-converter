@@ -1,0 +1,96 @@
+.UnitBox {
+  /* border-bottom: 1px solid #ccc; */
+  display: flex;
+  flex-direction: column;
+  /* padding-inline-end: 16px; */
+  background-color: white;
+  /* background: linear-gradient(to right, white, #eee); */
+}
+
+.FieldWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-block-end: 8px;
+}
+
+.Field {
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  padding-inline-start: 16px;
+  padding-inline-end: 0;
+  width: 100%;
+
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.Label {
+  margin: 0;
+  padding-inline-start: 16px;
+
+  color: #666;
+
+  font-size: 20px;
+}
+
+.Actions {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  padding-inline-start: 8px;
+}
+
+.Action {
+  --size: 44px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--size);
+  padding-inline-start: 4px;
+  padding-inline-end: 4px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.Action:not(:last-of-type) {
+  margin-inline-end: 0;
+}
+
+.Action:hover {
+  background-color: #cccccc1a;
+}
+
+.ActionIcon {
+  box-sizing: border-box;
+  --size: 28;
+  --border-width: 2.5;
+  border: calc(var(--border-width) * 1px) solid var(--color-interactive-primary);
+  border-radius: calc(calc(var(--size) / 2) * 1px);
+  height: calc(var(--size) * 1px);
+  min-width: calc(var(--size) * 1px);
+  padding-inline-start: 4px;
+  padding-inline-end: 4px;
+
+  color: var(--color-interactive-primary);
+
+  --font-size: 14;
+  font-size: calc(var(--font-size) * 1px);
+  font-weight: 600;
+  --content-height: calc(var(--size) - calc(2 * var(--border-width)));
+  line-height: calc(var(--content-height) / var(--font-size));
+}
+
+/* Positioning */
+/* Display */
+/* Colors */
+/* Type */
+/* Other */
